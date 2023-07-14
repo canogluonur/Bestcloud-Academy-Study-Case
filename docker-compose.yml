@@ -1,0 +1,7 @@
+version: '4'
+services: 
+  flask-app: 
+    container_name: flask-app
+    image:  onurcanoglu/akademi2023:latest
+    ports:
+      - '5001:5000'
