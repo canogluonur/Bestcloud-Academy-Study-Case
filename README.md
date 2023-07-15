@@ -28,5 +28,6 @@ Also you can run from Docker Hub;
 ```
 $ docker pull onurcanoglu/akademi2023:latest
 ```
+```
 $ docker container run -p 5000:5000 onurcanoglu/akademi2023:latest
-
+```
