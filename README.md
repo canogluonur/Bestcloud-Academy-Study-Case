@@ -20,10 +20,11 @@ Now visit http://localhost:5000
 
 And you can check the container status
 ```
+```
 $ docker ps -a 
 ```
 
-```
+
 Also you can run from Docker Hub;
 ```
 $ docker pull onurcanoglu/akademi2023:latest
