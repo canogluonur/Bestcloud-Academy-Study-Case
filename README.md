@@ -7,10 +7,10 @@ $ git clone https://github.com/canogluonur/FBI-Flask-API-Docker.git
 $ docker build -t akademi2023 .
 ```
 Note: akademi2023 can be replaced with any name.
-```
+
 ### Run the container
 Create a container from the image.
-```
+
 ```
 $ docker run -d -p 5000:5000 akademi2023 
 ```
