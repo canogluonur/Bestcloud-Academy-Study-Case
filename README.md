@@ -1,18 +1,33 @@
-hi everyonew
+# Academy2023 Python API dockerize
 
-Burada normal bir şekilde Flask-App'in çalışabilme için Dockerfile vardır. Fakat uygulamayı build ettiğimizde Image'ın boyutunun 1.01GB olduğunu gördüm. Bu normal bir image için çok yüksek bir büyüklük. 
+### Build application
+Build the Docker image manually by cloning the Git repo.
+```
+$ git clone https://github.com/canogluonur/FBI-Flask-API-Docker.git
+$ docker build -t akademi2023 .
+```
+Note: akademi2023 can be replaced with any name.
+```
+### Run the container
+Create a container from the image.
+```
+```
+$ docker run -p 5000:5000 akademi2023 
+```
+```
+Now visit http://localhost:5000
 
 
-Buna çözüm için Dockerfile'da mutlti-stage yapıyı kullanmaya karar verdim.
+And you can check the container status
+```
+docker ps -a 
+```
 
-Dockerfile'da multi-stage build, Docker imajının birden fazla aşamasında çalışmasını sağlayan bir tekniktir. Bu yöntem, daha küçük ve güvenli bir çalışma zamanı ortamı oluşturmanıza olanak tanırken, geliştirme aşamasında daha büyük ve daha karmaşık araçlar kullanmanızı sağlar.
+```
+Also you can run from Docker Hub;
+$ docker pull onurcanoglu/akademi2023:latest
 
+$ docker container run -p 5000:5000 onurcanoglu/akademi2023:latest
+```
 
-Gördüğünüz üzere "akademi" image'i 1.01GB'ken "akademi2023-flask-app" multi-stage'le 266MB 'a kadar düşürebildik.
-
-Şimdi oluşturduğumuz image'i çalıştırıyoruz.
-docker run -d -p 5001:5000 2023akademi
-
-
-2023akademi image'mi onurcanoglu/akademi2023 dockerhub repo'ma pushladım.
 
