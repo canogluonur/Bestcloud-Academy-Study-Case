@@ -14,12 +14,11 @@ Create a container from the image.
 ```
 $ docker run -p 5000:5000 akademi2023 
 ```
-```
+
 Now visit http://localhost:5000
 
-
 And you can check the container status
-```
+
 ```
 $ docker ps -a 
 ```
