@@ -12,7 +12,7 @@ Note: akademi2023 can be replaced with any name.
 Create a container from the image.
 ```
 ```
-$ docker run -p 5000:5000 akademi2023 
+$ docker run -d -p 5000:5000 akademi2023 
 ```
 
 Now visit http://localhost:5000
