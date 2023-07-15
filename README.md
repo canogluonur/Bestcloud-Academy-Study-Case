@@ -19,7 +19,7 @@ Now visit http://localhost:5000
 
 
 And you can check the container status
-```
+
 docker ps -a 
 ```
 
